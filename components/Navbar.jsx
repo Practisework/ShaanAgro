@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-around items-center">
         <div className="text-black text-xl font-bold">
           <Link href="/" onClick={toggleMenu}>
-            <p className="cursor-pointer">MyApp</p>
+            <p>home</p>
           </Link>
         </div>
         <div className="hidden md:flex justify-around w-96 space-x-4">
@@ -41,7 +42,7 @@ const Navbar = () => {
             </p>
           </Link>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <button
             onClick={toggleMenu}
             className="text-black focus:outline-none"
@@ -80,16 +81,16 @@ const Navbar = () => {
             exit="hidden"
             variants={menuVariants}
             transition={{ duration: 0.3 }}
-            className="md:hidden "
+            className="md:hidden absolute w-96 right-10 bg-white"
           >
             <Link onClick={toggleMenu} href="/about" passHref>
               <motion.p
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: [0, 0, 1] }}
                 transition={{
                   type: "ease-in-and-out",
                   stiffness: 120,
-                  duration: 0.5,
+                  duration: 0.3,
                 }}
                 className="text-xl text-center py-6 text-black hover:text-main cursor-pointer"
               >
@@ -98,22 +99,22 @@ const Navbar = () => {
             </Link>
             <Link onClick={toggleMenu} href="/products" passHref>
               <motion.p
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                initial={{ y: -175, opacity: 0 }}
+                animate={{ y: 0, opacity: [0, 0, 1] }}
                 transition={{
                   type: "ease-in-and-out",
                   stiffness: 120,
-                  duration: 0.8,
+                  duration: 0.6,
                 }}
                 className="block text-xl text-center py-6 text-black hover:text-main cursor-pointer"
               >
-                शेतीचे अवजारे
+                शेतीचे औजारे
               </motion.p>
             </Link>
             <Link onClick={toggleMenu} href="/contact" passHref>
               <motion.p
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                initial={{ y: -250, opacity: 0 }}
+                animate={{ y: 0, opacity: [0, 0, 1] }}
                 transition={{
                   type: "ease-in-and-out",
                   stiffness: 120,
