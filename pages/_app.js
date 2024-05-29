@@ -1,5 +1,14 @@
 import "@/styles/globals.css";
+import Navbar from "@/components/Navbar";
+import { Noto_Sans_Devanagari } from "next/font/google";
+
+const Font = Noto_Sans_Devanagari({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <div className={Font.className}>
+      <Navbar />
+      <Component {...pageProps} />
+    </div>
+  );
 }
