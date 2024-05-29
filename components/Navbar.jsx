@@ -89,7 +89,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: [0, 0, 1] }}
                 transition={{
                   type: "ease-in-and-out",
-                  stiffness: 120,
+                  stiffness: -120,
                   duration: 0.3,
                 }}
                 className="text-xl text-center py-6 text-black hover:text-main cursor-pointer"
@@ -103,7 +103,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: [0, 0, 1] }}
                 transition={{
                   type: "ease-in-and-out",
-                  stiffness: 120,
+                  stiffness: -120,
                   duration: 0.6,
                 }}
                 className="block text-xl text-center py-6 text-black hover:text-main cursor-pointer"
@@ -117,7 +117,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: [0, 0, 1] }}
                 transition={{
                   type: "ease-in-and-out",
-                  stiffness: 120,
+                  stiffness: -120,
                   duration: 1.2,
                 }}
                 className="block text-xl text-center py-6 text-black hover:text-main cursor-pointer"
