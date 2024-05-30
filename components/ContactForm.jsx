@@ -33,7 +33,7 @@ const Contactform = () => {
       <section className="text-gray-600 body-font relative">
         <form action="">
           <div className="container px-5 py-10 mx-auto flex sm:bg-white sm:flex-nowrap flex-wrap">
-            <div className="lg:w-1/2 md:w-1/2  bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+            <div className="lg:w-1/2 md:w-1/2 mt-24 h-96 w-full bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
               <iframe
                 width="100%"
                 height="100%"
@@ -44,8 +44,8 @@ const Contactform = () => {
                 marginwidth="0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d469.02291983830975!2d73.97167372163274!3d19.8744779807339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddbb3ed4ee3d55%3A0xe3d1b5b9fccd4259!2sSHAAN%20AGRO%20(SINNAR)!5e0!3m2!1sen!2sin!4v1716979971284!5m2!1sen!2sin"
               ></iframe>
-              <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                <div className="lg:w-1/2 px-6">
+              <div className="bg-white relative hidden md:flex lg:flex flex-wrap py-0 lg:py-6 md:py-6 rounded shadow-md">
+                <div className="lg:w-1/2  px-6">
                   <h2 className="font-semibold text-gray-900 tracking-widest ">
                     पत्ता
                   </h2>
@@ -67,7 +67,7 @@ const Contactform = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 md:w-1/3 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+            <div className="lg:w-1/2 md:w-1/3 bg-white flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
               <div className="relative mb-4">
                 <label for="name" className="leading-7 text-sm text-gray-600">
                   तुमचे नाव
