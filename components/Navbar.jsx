@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-
+import LogoImg from "../public/images/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-around items-center">
         <div className="text-black text-xl font-bold">
           <Link href="/" onClick={toggleMenu}>
-            <p>home</p>
+            <Image src={LogoImg} height={100} width={100}></Image>
           </Link>
         </div>
         <div className="hidden md:flex justify-around w-96 space-x-4">
