@@ -5,7 +5,6 @@ import two from "../public/images/2.jpg";
 import three from "../public/images/3.jpg";
 import four from "../public/images/4.jpg";
 import five from "../public/images/5.jpg";
-import Contactform from "@/components/ContactForm";
 
 const About = () => {
   return (
@@ -57,7 +56,6 @@ const About = () => {
           imgPos={true}
         />
       </section>
-      <Contactform />
     </>
   );
 };

@@ -3,7 +3,6 @@ import Image from "next/image";
 import ploughImg from "../public/images/plough.jpeg";
 import cultivatorImg from "../public/images/cultivator.png";
 import trolleyImg from "../public/images/trolley.jpeg";
-import Contactform from "@/components/ContactForm";
 import HeroImage from "../public/images/5.jpg";
 import Card from "@/components/Card";
 const animationVariants = {
@@ -127,7 +126,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Contactform />
     </>
   );
 }
