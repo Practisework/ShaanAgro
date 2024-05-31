@@ -1,15 +1,15 @@
-import cultivatorImg from "../public/images/cultivator.png";
-import trolleyImg from "../public/images/trolley.jpeg";
-import ploughImg from "../public/images/plough.jpeg";
-import RotavatorImg from "../public/images/Rotavator.jpeg";
-import GarudPoloRotaryTillerImg from "../public/images/GarudPoloRotaryTiller.jpeg";
-import GarudSamratRotaryTillerImg from "../public/images/GarudSamratRotaryTiller.jpeg";
-import GarudSupremoRotaryTillerImg from "../public/images/GarudSupremoRotaryTiller.jpeg";
-import GarudSuperSeederImg from "../public/images/GarudSuperSeeder.jpeg";
-import GarudBalerPoloImg from "../public/images/GarudBalerPolo.jpeg";
-import GarudReverseForwardRotaryTillerImg from "../public/images/GarudReverseForwardRotaryTiller.jpeg";
-import GarudHarvesterImg from "../public/images/GarudHarvester.jpeg";
-import GarudPlusImg from "../public/images/GarudPlus.jpeg";
+import cultivatorImg from "./public/images/cultivator.png";
+import trolleyImg from "./public/images/trolley.jpeg";
+import ploughImg from "./public/images/plough.jpeg";
+import RotavatorImg from "./public/images/Rotavator.jpeg";
+import GarudPoloRotaryTillerImg from "./public/images/GarudPoloRotaryTiller.jpeg";
+import GarudSamratRotaryTillerImg from "./public/images/GarudSamratRotaryTiller.jpeg";
+import GarudSupremoRotaryTillerImg from "./public/images/GarudSupremoRotaryTiller.jpeg";
+import GarudSuperSeederImg from "./public/images/GarudSuperSeeder.jpeg";
+import GarudBalerPoloImg from "./public/images/GarudBalerPolo.jpeg";
+import GarudReverseForwardRotaryTillerImg from "./public/images/GarudReverseForwardRotaryTiller.jpeg";
+import GarudHarvesterImg from "./public/images/GarudHarvester.jpeg";
+import GarudPlusImg from "./public/images/GarudPlus.jpeg";
 
 const Data = [
   {

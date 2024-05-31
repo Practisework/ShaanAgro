@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "../Implement_Data";
+import Data from "../../implement_data";
 import Contactform from "../../Components/Contactform";
 import Card from "@/components/Card";
 const Products = () => {
