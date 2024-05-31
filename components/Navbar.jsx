@@ -81,7 +81,7 @@ const Navbar = () => {
             exit="hidden"
             variants={menuVariants}
             transition={{ duration: 0.3 }}
-            className="md:hidden absolute w-96 right-10 bg-white"
+            className="md:hidden absolute z-50 w-full bg-white"
           >
             <Link onClick={toggleMenu} href="/about" passHref>
               <motion.p

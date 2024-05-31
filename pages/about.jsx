@@ -1,202 +1,64 @@
-const about = () => {
+import React from "react";
+import AboutUsComponent from "../Components/aboutuscomponent";
+import aboutUsImage from "../public/images/aboutUsHeroImage.png";
+import two from "../public/images/2.jpg";
+import three from "../public/images/3.jpg";
+import four from "../public/images/4.jpg";
+import five from "../public/images/5.jpg";
+import Contactform from "@/components/ContactForm";
+
+const About = () => {
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-4">
-          <div class="p-4 md:w-1/3">
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              {/* <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"> */}
-              <div class="p-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  CATEGORY
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  The Catalyzer
-                </h1>
-                <p class="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-                <div class="flex items-center flex-wrap ">
-                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
-                    Learn More
-                    <svg
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>
-                    1.2K
-                  </span>
-                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    6
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/3">
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              {/* <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog"> */}
-              <div class="p-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  CATEGORY
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  The 400 Blows
-                </h1>
-                <p class="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-                <div class="flex items-center flex-wrap">
-                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
-                    Learn More
-                    <svg
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>
-                    1.2K
-                  </span>
-                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                      n
-                    >
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    6
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/3">
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              {/* <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"> */}
-              <div class="p-6">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  CATEGORY
-                </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Shooting Stars
-                </h1>
-                <p class="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-                <div class="flex items-center flex-wrap ">
-                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
-                    Learn More
-                    <svg
-                      class="w-4 h-4 ml-2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>
-                    1.2K
-                  </span>
-                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg
-                      class="w-4 h-4 mr-1"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    6
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <>
+      <section class="text-gray-600 body-font">
+        <AboutUsComponent
+          content="2021 मध्ये स्थापन झालेल्या आव्हाड इंजिनिअरिंग प्रायव्हेट
+            लिमिटेडमध्ये, नावीन्यपूर्ण आणि गुणवत्तेद्वारे शेतीमध्ये क्रांती
+            घडवणे हे आमचे ध्येय आहे. शान ब्रँड अंतर्गत, आम्ही उत्कृष्टतेच्या
+            वचनबद्धतेनुसार अत्याधुनिक कृषी अवजारे तयार करतो. बिनधास्त गुणवत्तेवर
+            लक्ष केंद्रित करून, आम्ही शेतकऱ्यांना विश्वसनीय उपायांसह सक्षम करतो,
+            कृषी क्षेत्रातील उत्पादकता आणि टिकाऊपणा वाढवतो. एक डायनॅमिक खेळाडू
+            म्हणून विश्वास ठेवला, आम्ही सतत अपेक्षांपेक्षा जास्त प्रयत्न करतो,
+            याची खात्री करून घेतो की जगभरातील शेतकरी शेतात यश मिळवण्यासाठी शान
+            उपकरणांवर अवलंबून राहू शकतात."
+          imgSrc={aboutUsImage}
+          imgPos={true}
+        />
+        <h1 className="text-center text-5xl text-black">
+          शेतीचे भविष्य जोपासणे
+        </h1>
+        <AboutUsComponent
+          content="आव्हाड इंजिनिअरिंग प्रायव्हेट लिमिटेड, 2021 मध्ये स्थापन झालेली एक तरुण आणि गतिमान कंपनी, आम्ही नावीन्यपूर्ण आणि अतुलनीय गुणवत्तेद्वारे कृषी क्षेत्रात क्रांती घडवून आणण्यास उत्सुक आहोत. आमचा विश्वास आहे की शेतकऱ्यांना अत्याधुनिक साधनांनी सुसज्ज करून, आम्ही अन्न सुरक्षा आणि शाश्वत पद्धतींसाठी उज्ज्वल भविष्य जोपासू शकतो."
+          imgSrc={two}
+          imgPos={false}
+        />
+        <h1 className="text-center text-5xl text-black">
+          शान जेथे तंत्रज्ञान परंपरा पूर्ण करते
+        </h1>
+        <AboutUsComponent
+          content="शान ब्रँड अंतर्गत, आम्ही अत्याधुनिक कृषी अवजारांची रचना आणि निर्मिती करतो. आम्ही पारंपारिक शेती पद्धती आणि आधुनिक तंत्रज्ञानातील प्रगती यांच्यातील अंतर कमी करतो. उत्कृष्टतेची आमची अटूट बांधिलकी या प्रक्रियेच्या प्रत्येक टप्प्यावर, संकल्पनेपासून अंतिम उत्पादनापर्यंत मार्गदर्शन करते. आमची उपकरणे क्षेत्रामध्ये अतुलनीय विश्वसनीयता आणि कार्यप्रदर्शन प्रदान करतात याची खात्री करण्यासाठी आम्ही उच्च-गुणवत्तेची सामग्री आणि अत्याधुनिक तंत्रज्ञानाचा वापर करतो."
+          imgSrc={three}
+          imgPos={true}
+        />
+        <h1 className="text-center text-5xl text-black">
+          शेतकऱ्यांना सक्षम बनवणे, आपले भविष्य सुरक्षित करणे
+        </h1>
+        <AboutUsComponent
+          content="शान ब्रँड अंतर्गत, आम्ही अत्याधुनिक कृषी अवजारांची रचना आणि निर्मिती करतो. आम्ही पारंपारिक शेती पद्धती आणि आधुनिक तंत्रज्ञानातील प्रगती यांच्यातील अंतर कमी करतो. उत्कृष्टतेची आमची अटूट बांधिलकी या प्रक्रियेच्या प्रत्येक टप्प्यावर, संकल्पनेपासून अंतिम उत्पादनापर्यंत मार्गदर्शन करते. आमची उपकरणे क्षेत्रामध्ये अतुलनीय विश्वसनीयता आणि कार्यप्रदर्शन प्रदान करतात याची खात्री करण्यासाठी आम्ही उच्च-गुणवत्तेची सामग्री आणि अत्याधुनिक तंत्रज्ञानाचा वापर करतो."
+          imgSrc={four}
+          imgPos={false}
+        />
+        <h1 className="text-center text-5xl text-black">
+          शान शाश्वत वाढीमध्ये तुमचा भागीदार
+        </h1>
+        <AboutUsComponent
+          content="शान ब्रँड अंतर्गत, आम्ही अत्याधुनिक कृषी अवजारांची रचना आणि निर्मिती करतो. आम्ही पारंपारिक शेती पद्धती आणि आधुनिक तंत्रज्ञानातील प्रगती यांच्यातील अंतर कमी करतो. उत्कृष्टतेची आमची अटूट बांधिलकी या प्रक्रियेच्या प्रत्येक टप्प्यावर, संकल्पनेपासून अंतिम उत्पादनापर्यंत मार्गदर्शन करते. आमची उपकरणे क्षेत्रामध्ये अतुलनीय विश्वसनीयता आणि कार्यप्रदर्शन प्रदान करतात याची खात्री करण्यासाठी आम्ही उच्च-गुणवत्तेची सामग्री आणि अत्याधुनिक तंत्रज्ञानाचा वापर करतो."
+          imgSrc={five}
+          imgPos={true}
+        />
+      </section>
+      <Contactform />
+    </>
   );
 };
-
-export default about;
+export default About;

@@ -1,8 +1,8 @@
 import { animate, motion } from "framer-motion";
 import Image from "next/image";
-import GarudPoloRotaryTiller from "../public/images/GarudPoloRotaryTiller.jpeg";
-import GarudPlusRotaryTiller from "../public/images/GarudPlusRotaryTiller.jpeg";
-import GarudBalerPolo from "../public/images/GarudBalerPolo.jpeg";
+import ploughImg from "../public/images/plough.jpeg";
+import cultivatorImg from "../public/images/cultivator.png";
+import trolleyImg from "../public/images/trolley.jpeg";
 import Contactform from "@/components/ContactForm";
 import HeroImage from "../public/images/5.jpg";
 import Card from "@/components/Card";
@@ -42,7 +42,7 @@ export default function Home() {
                   <Image
                     class="object-cover lg:h-72 md:h-36 w-full border-gray-500  border-2 rounded-xl shadow-mainShadow object-center"
                     alt="hero"
-                    src={GarudBalerPolo}
+                    src={cultivatorImg}
                     height={600 / 2}
                     width={720 / 2}
                   />
@@ -51,7 +51,7 @@ export default function Home() {
                   <Image
                     class="object-cover lg:h-72 md:h-36 w-full border-gray-500  border-2 rounded-xl shadow-mainShadow object-center"
                     alt="hero"
-                    src={GarudPlusRotaryTiller}
+                    src={ploughImg}
                     height={600 / 2}
                     width={720 / 2}
                   />
@@ -106,28 +106,23 @@ export default function Home() {
         <div class="container px-0 sm:px-8 py-8 mx-auto">
           <div class="flex flex-wrap m-4">
             <Card
-              ImageSrc={GarudPlusRotaryTiller}
-              title="Garud Plus Rotary Tiller"
-              info="एक गियर-बॉक्स आहे ज्यामुळे ते संतुलित राहते आणि कंपन होत नाही.
-              विशेष डिझाइन केलेले ब्लेडचा वापर केल्याने ट्रॅक्टरवरचा भार कमी
-              होतो, डिझेलची बचत होते आणि टायर घसरत नाहीत."
-              name="GarudPlusRotaryTiller"
+              ImageSrc={cultivatorImg}
+              title="कल्टीवेटर"
+              info="शानच्या कल्टीवेटरसह मातीच्या कठीण परिस्थितीवर मात करा. आमच्या मशीनमध्ये सहज प्रवेशासाठी एक अतिशय मजबूत फ्रेम, सहज ऑपरेशनसाठी हायड्रॉलिक प्रणाली आणि सानुकूलित कामाच्या खोलीसाठी हायड्रॉलिकली ॲडजस्टेबल ड्रॉबार आहे. मजबूत उलाढालीची धुरा दीर्घकाळ टिकणारी कामगिरी सुनिश्चित करते, ज्यामुळे हा शेतकरी कोणत्याही क्षेत्रासाठी एक विश्वासार्ह भागीदार बनतो.
+"
+              name="cutlivator"
             />
             <Card
-              ImageSrc={GarudPlusRotaryTiller}
-              title="Garud Plus Rotary Tiller"
-              info="एक गियर-बॉक्स आहे ज्यामुळे ते संतुलित राहते आणि कंपन होत नाही.
-              विशेष डिझाइन केलेले ब्लेडचा वापर केल्याने ट्रॅक्टरवरचा भार कमी
-              होतो, डिझेलची बचत होते आणि टायर घसरत नाहीत."
-              name="GarudPlusRotaryTiller"
+              ImageSrc={trolleyImg}
+              title="ट्रॉली"
+              info="टिकाऊपणा लक्षात घेऊन तयार केलेली ही ट्रॉली मजबूत बिल्ड गुणवत्तेचा अभिमान बाळगते. बेस शीट 6 मिमीच्या वजनाच्या सामग्रीपासून तयार केली जाते, हे सुनिश्चित करते की ते सर्वात जास्त मागणी असलेले भार देखील हाताळू शकते. मजबूत आर्क वेल्डिंग अतिरिक्त ताकद आणि दीर्घायुष्यासाठी फ्रेम मजबूत करते. त्याची लवचिकता आणखी वाढवण्यासाठी, ट्रॉलीला उच्च-गुणवत्तेच्या पेंट्सने लेपित केले जाते जे चिपिंग आणि गंजला प्रतिकार करतात. उत्कृष्ट स्थिरता आणि चालनासाठी, यात विस्तृत टायर्स आहेत जे विविध भूभागांवर अपवादात्मक पकड प्रदान करतात. पॅकेज पूर्ण करणे हे एक हेवी-ड्यूटी एक्सल आहे, जे कार्यक्षमतेशी तडजोड न करता महत्त्वपूर्ण वजनाचे समर्थन करण्यास सक्षम आहे."
+              name="trolley"
             />
             <Card
-              ImageSrc={GarudPlusRotaryTiller}
-              title="Garud Plus Rotary Tiller"
-              info="एक गियर-बॉक्स आहे ज्यामुळे ते संतुलित राहते आणि कंपन होत नाही.
-              विशेष डिझाइन केलेले ब्लेडचा वापर केल्याने ट्रॅक्टरवरचा भार कमी
-              होतो, डिझेलची बचत होते आणि टायर घसरत नाहीत."
-              name="GarudPlusRotaryTiller"
+              ImageSrc={ploughImg}
+              title="पल्टी नांगर"
+              info="अत्यंत आव्हानात्मक भूभागावरही विजय मिळवण्यासाठी तयार करण्यात आलेल्या या पल्टी नांगरात एक अति-मजबूत फ्रेम आहे जी कठीण मातीची परिस्थिती सहजतेने हाताळते. एकात्मिक हायड्रॉलिक सिस्टीम सहज नियंत्रणास अनुमती देते, ज्यामुळे माशीवर नांगरणी खोलीत समायोजन करणे शक्य होते. इष्टतम अंमलबजावणी संलग्नक आणि ट्रॅक्टर अनुकूलतेसाठी, नाविन्यपूर्ण टर्नओव्हर एक्सल वापरून ड्रॉबारची उंची सहजपणे वाढवता किंवा कमी केली जाऊ शकते. हा बहुमुखी नांगर कोणत्याही शेतासाठी कार्यक्षम आणि जुळवून घेण्याजोगा कार्य सुनिश्चित करतो."
+              name="plough"
             />
           </div>
         </div>
